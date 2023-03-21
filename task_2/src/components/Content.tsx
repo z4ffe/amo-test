@@ -32,11 +32,11 @@ const Content: React.FC = (): JSX.Element => {
                }}>
                с WELBEX
             </Heading>
-            <Text w='275px' fontWeight='400' fontSize='18px' lineHeight='22px' fontFamily='Montserrat' marginTop={['15px', '30px']}>
+            <Text w='275px' fontWeight='400' fontSize='18px' lineHeight='22px' fontFamily='Montserrat' marginTop={['5px', '30px']}>
                Развиваем и контролируем продажи за вас
             </Text>
          </Flex>
-         <Flex flexDir='column' alignItems={['start', 'end']} marginTop='15px'>
+         <Flex flexDir='column' alignItems={['start', 'end']} marginTop={['45px', '15px']}>
             <Heading fontWeight='700' fontSize='18px' w={['272px', '291px']} textAlign={['left', 'right']}>
                Вместе с{' '}
                <Text
@@ -56,7 +56,7 @@ const Content: React.FC = (): JSX.Element => {
                мы дарим:
             </Heading>
             {isMobile ? (
-               <SimpleGrid columns={2} alignSelf='start' marginTop='20px' gap='10px'>
+               <SimpleGrid columns={2} alignSelf='start' marginTop='12px' gap='10px 0'>
                   {contentList.map((el) => (
                      <GridItem display='flex' w='130px' key={el.id} alignItems='center' gap='5px'>
                         <Flex w='10px' h='1px' background='linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%)' />

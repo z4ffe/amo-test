@@ -6,12 +6,12 @@ import whatsapp from '../assets/images/whatsapp.svg'
 
 const Footer: React.FC = (): JSX.Element => {
    return (
-      <Flex w='100%' h={['615px', '315px']} paddingX='150px'>
-         <Flex flexDir='column'>
+      <Flex w='100%' h={['615px', '315px']} paddingX={['15px', '150px']} flexDir={['column', 'row']}>
+         <Flex flexDir='column' w={['320px', 'auto']} marginTop={['40px', '0']}>
             <Heading fontWeight='700' fontSize='14px' color='#656566'>
                О КОМПАНИИ
             </Heading>
-            <UnorderedList display='flex' flexDir='column' listStyleType='none' margin='20px 0 0' color='#E4E5EA' gap='10px'>
+            <UnorderedList display='flex' flexDir='column' listStyleType='none' margin={['15px 0 0', '20px 0 0']} color='#E4E5EA' gap={['5px', '10px']}>
                <ListItem>
                   <a href='#'>Партнёрская программа</a>
                </ListItem>
@@ -20,12 +20,22 @@ const Footer: React.FC = (): JSX.Element => {
                </ListItem>
             </UnorderedList>
          </Flex>
-         <Flex flexDir='column' margin='0 0 0 98px'>
+         <Flex flexDir='column' margin={['22px 0', '0 0 0 98px']}>
             <Heading fontWeight='700' fontSize='14px' color='#656566'>
                МЕНЮ
             </Heading>
-            <UnorderedList h='160px' display='flex' flexDir='column' flexWrap='wrap' listStyleType='none' color='#E4E5EA' margin='20px 0 0' gap='5px 50px'>
-               <ListItem>
+            <UnorderedList
+               h={['150px', '160px']}
+               display='flex'
+               flexDir='column'
+               flexWrap='wrap'
+               listStyleType='none'
+               color='#E4E5EA'
+               margin='20px 0 0'
+               fontSize={['14px', '16px']}
+               lineHeight={['15px', 'auto']}
+               gap={['12px 20px', '15px 50px']}>
+               <ListItem w={['123px', 'auto']}>
                   <a href='#'>Расчёт стоимости</a>
                </ListItem>
                <ListItem>
@@ -43,7 +53,7 @@ const Footer: React.FC = (): JSX.Element => {
                <ListItem>
                   <a href='#'>Кейсы</a>
                </ListItem>
-               <ListItem>
+               <ListItem w={['133px', 'auto']}>
                   <a href='#'>Благодарственные письма</a>
                </ListItem>
                <ListItem>
@@ -57,15 +67,15 @@ const Footer: React.FC = (): JSX.Element => {
                </ListItem>
             </UnorderedList>
          </Flex>
-         <Flex flexDir='column' marginLeft='auto' alignItems='end'>
-            <Heading fontWeight='700' fontSize='14px' color='#656566' textAlign='right'>
+         <Flex flexDir='column' marginLeft={['0', 'auto']} alignItems={['start', 'end']}>
+            <Heading fontWeight='700' fontSize='14px' color='#656566' textAlign={['left', 'right']}>
                КОНТАКТЫ
             </Heading>
-            <Flex marginLeft='auto' marginTop='20px'>
+            <Flex marginLeft={['0', 'auto']} marginTop='20px'>
                <Link href='callto:+75555555555'>+7 555 555-55-55</Link>
             </Flex>
-            <Flex marginTop='21px'>
-               <UnorderedList display='flex' gap='10px' listStyleType='none'>
+            <Flex marginTop={['10px', '21px']}>
+               <UnorderedList display='flex' gap='10px' listStyleType='none' margin='0'>
                   <ListItem>
                      <a href='https://telegram.org' target='_blank' rel='noreferrer'>
                         <Image src={telegram} />
@@ -83,13 +93,13 @@ const Footer: React.FC = (): JSX.Element => {
                   </ListItem>
                </UnorderedList>
             </Flex>
-            <Text fontSize='16px' marginTop='15px'>
+            <Text fontSize='16px' marginTop={['5px', '15px']}>
                Москва, Путевой проезд 3с1, к 902
             </Text>
-            <Text fontSize='12px' marginTop='65px'>
+            <Text fontSize='12px' marginTop={['50px', '65px']}>
                ©WELBEX 2022. Все права защищены.
             </Text>
-            <Text fontSize='12px' textDecoration='underline'>
+            <Text fontSize='12px' textDecoration='underline' marginBottom={['60px', '0']}>
                Политика конфиденциальности
             </Text>
          </Flex>

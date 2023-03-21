@@ -6,7 +6,7 @@ const Navbar: React.FC = (): JSX.Element => {
    const [isMobile] = useMediaQuery('(max-width: 320px)')
 
    return (
-      <Flex paddingTop='3px' marginLeft={['16px', '38px']}>
+      <Flex paddingTop={['15px', '3px']} marginLeft={['16px', '38px']}>
          {!isMobile ? (
             <UnorderedList display='flex' listStyleType='none' gap='30px'>
                {navbarData.map((el) => (
