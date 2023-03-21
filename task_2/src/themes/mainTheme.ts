@@ -13,7 +13,6 @@ const mainTheme = extendTheme({
          },
          '#root': {
             flexDirection: 'column',
-            boxSizing: 'border-box',
             margin: '0',
             padding: '0',
             width: '100%',
@@ -34,7 +33,6 @@ const mainTheme = extendTheme({
    components: {
       Heading: {
          baseStyle: {
-            textAlign: 'center',
             fontSize: ['36px', '48px'],
             color: '#E4E5EA',
          },
@@ -47,6 +45,8 @@ const mainTheme = extendTheme({
       },
       Link: {
          baseStyle: {
+            fontSize: ['14px', '16px'],
+            color: '#E4E5EA',
             '&:hover': {
                textDecoration: 'none',
             },
@@ -54,7 +54,7 @@ const mainTheme = extendTheme({
       },
    },
    breakpoints: {
-      md: '20em', // 414px
+      md: '20.5em', // 414px
       lg: '90.5em', // 1440px
    },
 }) as ChakraTheme
