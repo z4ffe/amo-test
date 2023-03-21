@@ -9,15 +9,16 @@ const Content: React.FC = (): JSX.Element => {
    return (
       <Flex
          w='100%'
-         h={['445px', '546px']}
+         h={['445px', '510px']}
          direction={['column', 'row']}
          paddingX={['15px', '150px']}
-         marginTop={['0', '90px']}
+         marginTop={['0', '80px']}
          justifyContent={['', 'space-between']}
          backgroundImage={[backgroundMobile, 'none']}>
          <Flex flexDir='column' marginTop={['40px', '0']}>
             <Heading fontWeight='400' fontSize={['36px', '48px']}>
-               Зарабатывайте больше
+               Зарабатывайте
+               <br /> больше
             </Heading>
             <Heading
                fontWeight='900'
@@ -31,19 +32,26 @@ const Content: React.FC = (): JSX.Element => {
                }}>
                с WELBEX
             </Heading>
-            <Text w='275px' fontWeight='400' fontSize='18px' fontFamily='Montserrat' marginTop={['15px', '30px']}>
+            <Text w='275px' fontWeight='400' fontSize='18px' lineHeight='22px' fontFamily='Montserrat' marginTop={['15px', '30px']}>
                Развиваем и контролируем продажи за вас
             </Text>
          </Flex>
-         <Flex flexDir='column' alignItems={['start', 'end']} marginTop='45px'>
-            <Heading fontWeight='500' fontSize='18px' w={['272px', '291px']} textAlign={['left', 'right']}>
+         <Flex flexDir='column' alignItems={['start', 'end']} marginTop='15px'>
+            <Heading fontWeight='700' fontSize='18px' w={['272px', '291px']} textAlign={['left', 'right']}>
                Вместе с{' '}
                <Text
                   as='span'
                   textTransform={['lowercase', 'uppercase']}
                   background='linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%)'
                   backgroundClip='text'>
-                  бесплатной консультацией
+                  бесплатной
+               </Text>{' '}
+               <Text
+                  as='span'
+                  textTransform={['lowercase', 'uppercase']}
+                  background='linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%)'
+                  backgroundClip='text'>
+                  консультацией
                </Text>{' '}
                мы дарим:
             </Heading>
@@ -57,13 +65,15 @@ const Content: React.FC = (): JSX.Element => {
                   ))}
                </SimpleGrid>
             ) : (
-               <SimpleGrid columns={2} alignSelf='end' marginTop='40px' gap='31px'>
+               <SimpleGrid columns={2} alignSelf='end' marginTop='40px' gap='28px 42px'>
                   {contentList.map((el) => (
                      <GridItem w='130px' key={el.id}>
                         <Heading fontWeight='500' fontSize='18px' textTransform='uppercase' textAlign='right'>
                            {el.header}
                         </Heading>
-                        <Text textAlign='right'>{el.body}</Text>
+                        <Text textAlign='right' lineHeight='22px' marginTop='6px'>
+                           {el.body}
+                        </Text>
                      </GridItem>
                   ))}
                </SimpleGrid>

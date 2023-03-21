@@ -22,10 +22,10 @@ const Header: React.FC = (): JSX.Element => {
                   </Text>
                </Flex>
                <Navbar />
-               <Flex marginLeft='107px' paddingTop='15px'>
+               <Flex marginLeft='145px' paddingTop='3px'>
                   <Link href='callto:+75555555555'>+7 555 555-55-55</Link>
                </Flex>
-               <Flex marginLeft='47px' paddingTop='15px' gap='30x'>
+               <Flex marginLeft='33px' paddingTop='3px' gap='30x'>
                   <UnorderedList display='flex' gap='30px' listStyleType='none'>
                      <ListItem>
                         <a href='https://telegram.org' target='_blank' rel='noreferrer'>

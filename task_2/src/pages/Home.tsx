@@ -7,7 +7,7 @@ import backgroundMain from '../assets/images/backgroundMain.png'
 
 const Home: React.FC = (): JSX.Element => {
    return (
-      <Flex display='flex' flexDir='column' w='100%' backgroundImage={['', backgroundMain]} backgroundRepeat='no-repeat' p>
+      <Flex display='flex' flexDir='column' w='100%' backgroundImage={['', backgroundMain]} backgroundRepeat='no-repeat' backgroundSize='cover'>
          <Header />
          <Content />
          <Footer />
